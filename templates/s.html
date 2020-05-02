@@ -55,11 +55,11 @@ ss="nav-link">Home</a></li>
     google.charts.setOnLoadCallback(drawChart);
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-        ["Tweet", "Fetched per day", { role: "style" } ],
-        ["Need", 8.94, "#b87333"],
-        ["Availability", 10.49, "silver"],
-        ["Others", 19.30, "gold"],
-     
+        ["Element", "Density", { role: "style" } ],
+        ["Copper", 8.94, "#b87333"],
+        ["Silver", 10.49, "silver"],
+        ["Gold", 19.30, "gold"],
+        ["Platinum", 21.45, "color: #e5e4e2"]
       ]);
 
       var view = new google.visualization.DataView(data);
@@ -71,7 +71,7 @@ ss="nav-link">Home</a></li>
                        2]);
 
       var options = {
-        title: "Tweets Analyis",
+        title: "Density of Precious Metals, in g/cm^3",
         width: 600,
         height: 400,
         bar: {groupWidth: "95%"},
@@ -92,14 +92,16 @@ ss="nav-link">Home</a></li>
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
-          ['Tweets', 'Fetched per day'],
-          ['Need',     11],
-          ['Availability',      2],
-          ['Others',  2],
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
         ]);
 
         var options = {
-          title: 'Tweets Analysis'
+          title: 'My Daily Activities'
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -109,6 +111,5 @@ ss="nav-link">Home</a></li>
     </script>
     <div id="piechart" style="width: 500px; height: 300px;"></div>
 </div>
-  
     </body>
 </html>

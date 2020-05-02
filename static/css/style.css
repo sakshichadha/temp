@@ -1732,6 +1732,9 @@ textarea.form-control {
 
 .form-check-label {
   margin-bottom: 0; }
+.inline-block {
+   display: inline-block;
+}
 
 .form-check-inline {
   display: -webkit-inline-box;
@@ -9662,6 +9665,7 @@ textarea.form-control {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+
 
 @-webkit-keyframes loader-dash {
   0% {
